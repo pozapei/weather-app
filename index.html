@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@200;400;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="container-header">
+            <div class="search-box">
+
+                <i class="bi bi-geo-alt"></i>
+                <input type="text" placeholder="Search your location">
+                <i class="bi bi-search search"></i>
+            </div>
+
+            <div class="error not-found">
+                <img src="./assets/404.jpg" alt="">
+                <p>Oops, couldn't find your location</p>
+            </div>
+
+            <div class="weather-img not-found">
+                <img src="" alt="">
+            </div>
+
+            <div class="weather-box not-found">
+                <img src="" alt="">
+                <p class="temperature"></p>
+                <p class="description"></p>
+            </div>
+            
+
+            <div class="weather-info not-found">
+
+                <div class="wind">
+
+                    <i class="bi bi-wind"></i>
+                    <p>Wind Speed</p>
+                </div>
+
+                <div class="humidity">
+
+                    <i class="bi bi-water"></i>
+                    <p>Humidity</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
