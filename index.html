@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@200;400;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
+
     <title>Weather App</title>
 </head>
 
@@ -30,35 +31,42 @@
                 <p>Oops, couldn't find your location</p>
             </div>
 
-            <div class="weather-img not-found">
-                <img src="" alt="">
+            <div class="weather-img">
+                <img src="">
             </div>
 
-            <div class="weather-box not-found">
+            <div class="weather-box ">
                 <img src="" alt="">
-                <p class="temperature"></p>
-                <p class="description"></p>
+                <p class="temperature"> <span></span></p>
+                <p class="description"> <span></span></p>
             </div>
-            
+
 
             <div class="weather-info not-found">
 
                 <div class="wind">
-
                     <i class="bi bi-wind"></i>
-                    <p>Wind Speed</p>
+                    <div class="weather-element">
+                        <p>Wind Speed</p>
+                        <span></span>
+                    </div>
                 </div>
 
                 <div class="humidity">
-
                     <i class="bi bi-water"></i>
-                    <p>Humidity</p>
+
+                    <div class="weather-element">
+                        <p>Humidity</p>
+                        <span></span>
+
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
     <script src="./script.js"></script>
+
 </body>
 
 </html>

@@ -1,15 +1,15 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
     border: none;
     font-family: 'Poppins', sans-serif;
+    transition: all .2s;
 }
 
 
-html{
+html {
     overflow-y: hidden;
     background-image: url(/assets/background.svg);
     background-size: 100%;
@@ -18,29 +18,30 @@ html{
 
 
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100vh;
-    transition:  .6s ease-out;
+    transition: .6s ease-out;
 }
 
-.container-header{
+.container-header {
     display: flex;
     background-color: white;
     padding: 10px;
     border-radius: 20px;
     text-align: center;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
-.container-header input{
+
+.container-header input {
     padding: 10px;
 }
 
-.container-header i{
+.container-header i {
     font-size: 20px;
     border-radius: 50%;
     padding: 8px;
@@ -49,59 +50,80 @@ html{
     transition: all .2s;
 }
 
-.container-header input:focus::placeholder{
+.container-header input:focus::placeholder {
     color: transparent;
     transition: all .2s;
 }
-.container-header .search:hover{
+
+.container-header .search:hover {
     background-color: rgb(162, 162, 252);
     cursor: pointer;
 
 }
-.error{
-    font-size: 15px;
-    opacity: 1;
-    padding-bottom: 10vh;
-}
-.error img{
-    width: 25vh;
 
-    -webkit-transform:rotate(90deg);
+.error {
+    font-size: 20px;
+    opacity: 1;
+}
+
+.error img {
+    margin-top: 40px;
+    width: 20vh;
+
+    -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-.weather-info{
+
+.weather-info {
     display: flex;
-    justify-content: space-around;
     color: black;
-}
-.weather-element{
-    padding: 20px;
+    margin-top: 30px;
+
 }
 
-.not-found{
+.wind,
+.humidity {
+    display: flex;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(10, 9, 27);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.not-found {
     display: none;
     opacity: 0;
     scale: 0;
 }
 
-.fade-in{
-    animation: .5s fadeIn forwards;
+.fadeIn {
+    animation: .2s fadeIn forwards;
     animation-delay: .5s;
 }
 
-.weather-img{
+.weather-img {
+    align-self: center;
     width: 200px;
+    display: none;
 }
-.weather-img img{
+
+.weather-img img {
     width: 200px;
 
+}
+.weather-box{
+    font-size: 20px;
+    color: rgb(10, 9, 27);
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 @keyframes fadeIn {
-    to{
+    to {
         scale: 1;
         opacity: 1;
         display: flex;
